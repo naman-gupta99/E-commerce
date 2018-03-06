@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Groceries.com</title>
+    <link type="text/css" rel="stylesheet" href="materialize.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  </head>
+  <body>
+    <!-- nav bar started -->
+    <nav id="navbar">
+      <div class="nav-wrapper" id="navdiv">
+        <a href="#" class="brand-logo"><i id="Groceries">Groceries.com</i></a>
+      </div>
+    </nav>
+    <br>
+    <div class="slider">
+      <ul class="slides">
+        <li>
+            <img src="download.jpg">
+        </li>
+        <li>
+            <img src="PG_brands.jpg">
+        </li>
+        <li>
+            <img src="images.jpg">
+        </li>
+        <li>
+            <img src="itc.jpg">
+        </li>
+    </ul>
+</div>
+
+<!--computer menu started-->
+<div class="row hide-on-med-and-down">
+  <div class="col l4 xl4">
+    <div class="card">
+      <div class="card-image">
+        <img src="axe.jpg" height=100%>
+        <span class="card-title"><a class="product">Axe Signature Gold<a></span>
+      </div>
+      <div class="card-content cont">
+        <p>A warm and suave fragrance, the New Axe Signature Dark Vanilla for men is a Eau De Toilette made with premium ingredients.</p>
+      </div>
+      <div class="card-action">
+        <a href="#"><b class="cost">Rs 300</b></a>
+      </div>
+    </div>
+  </div>
+  <div class="col l4 xl4">
+    <div class="card">
+      <div class="card-image">
+        <img src="razor.jpg" height=100%>
+        <span class="card-title"><a class="product">Gillette Fusion<a></span>
+      </div>
+      <div class="card-content cont">
+        <p>Flexball technology makes maximum contact over facial contours to give you Gillette's best shave.</p><br>
+      </div>
+      <div class="card-action">
+        <a href="#"><b class="cost">Rs 420</b></a>
+      </div>
+    </div>
+  </div>
+  <div class="col l4 xl4">
+    <div class="card">
+      <div class="card-image">
+        <img src="rice.jpg" height=100%>
+        <span class="card-title"><a class="product">Daawat Brown Rice<a></span>
+      </div>
+      <div class="card-content cont">
+        <p>Daawat brown basmati rice is a great option for a delicious, nutritious and healthy quick cooking rice meal.</p><br>
+      </div>
+      <div class="card-action">
+        <a href="#"><b class="cost">Rs 160</b></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--phone menu started-->
+<div class="row hide-on-large-only">
+  <div class="col l4 xl4">
+    <div class="card">
+      <div class="card-image">
+        <img src="axe.jpg" height=100%>
+        <span class="card-title"><a class="product" id="productm">Axe Signature Gold<a></span>
+      </div>
+      <div class="card-content cont"  id="contm">
+        <p>A warm and suave fragrance, the New Axe Signature Dark Vanilla for men is a Eau De Toilette made with premium ingredients.</p>
+      </div>
+      <div class="card-action">
+        <a href="#"><b class="cost" id="costm">Rs 300</b></a>
+      </div>
+    </div>
+  </div>
+  <div class="col l4 xl4">
+    <div class="card">
+      <div class="card-image">
+        <img src="razor.jpg" height=100%>
+        <span class="card-title"><a class="product" id="productm">Gillette Fusion<a></span>
+      </div>
+      <div class="card-content cont" id="contm">
+        <p>Flexball technology makes maximum contact over facial contours to give you Gillette's best shave.</p><br>
+      </div>
+      <div class="card-action">
+        <a href="#"><b class="cost" id="costm">Rs 420</b></a>
+      </div>
+    </div>
+  </div>
+  <div class="col l4 xl4">
+    <div class="card">
+      <div class="card-image">
+        <img src="rice.jpg" height=100%>
+        <span class="card-title"><a class="product" id="productm">Daawat Brown Rice<a></span>
+      </div>
+      <div class="card-content cont" id="contm">
+        <p>Daawat brown basmati rice is a great option for a delicious, nutritious and healthy quick cooking rice meal.</p><br>
+      </div>
+      <div class="card-action">
+        <a href="#"><b class="cost" id="costm">Rs 160</b></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+<center>All Rights Reserved to MaroonKnight.<center>
+</div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="materialize.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slider').slider();
+        $('.dropdown-button').dropdown({
+          inDuration: 20,
+          outDuration: 12,
+          constrainWidth: false, // Does not change width of dropdown to that of the activator
+          hover: true, // Activate on hover
+          gutter: 0, // Spacing from edge
+          belowOrigin: false, // Displays dropdown below the button
+          alignment: 'left', // Displays dropdown with edge aligned to the left of button
+          stopPropagation: false // Stops event propagation
+        });
+      });
+    </script>
+  </body>
+</html>
